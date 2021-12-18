@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Latihan</title>
+  <base target="_top">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.min.css" />
+
+  <style>
+    .jadwal {
+      white-space: pre-line;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card mt-3">
+      <div class="card-header bg-primary text-light">
+        PROGRES SAGIS
+      </div>
+      <div class="card-body">
+        <form id="formPdp" onsubmit="getPdp();return false;">
+          <div class="mb-3">
+            <label for="pdp" class="form-label">Nama Pendamping</label>
+              <select id="pdp" class="form-select">
+              <option>A. LATIEF, S.Pd</option>
+              <option>AAN FARID HUSNI</option>
+              <option>ACEP RUDIANA</option>
+              <option>ADE SURYANA</option>
+              <option>ADE TIO SUPRIATNA, S.Pd</option>
+              <option>ADE YANTI PEBRIANTI</option>
+              <option>ADRIL, S.TR. SOS</option>
+              <option>AEF SAEFUDIN, S.PD</option>
+              <option>AGUS HARIKA, ST</option>
+              <option>AHMAD KAMIL, S.Pd</option>
+              <option>AIN YUNIA, S.TP</option>
+              <option>AJU RASJU</option>
+              <option>AKHDIAT BIQI SUDRAJAT</option>
+              <option>AMANDAYA TAUFAN AZIZ, S.Pd</option>
+              <option>ANDI RUKMINI</option>
+              <option>ANISA FADILLA, S.TR.SOS</option>
+              <option>ARDI NUGRAHA</option>
+              <option>ARIF GUNAWAN, S.Pd</option>
+              <option>ARIF NURRACHMAN. ST</option>
+              <option>ARIS SETIAWAN, S.PD</option>
+              <option>ARMAN NANDA PRADHANA</option>
+              <option>ASEP SUCIPTO, S.Pd</option>
+              <option>ATANG TASUHI</option>
+              <option>ATIT RAHMAWATI, AM.Keb</option>
+              <option>BANGKIT SETIANSYAH PUTRA, S. KOM</option>
+              <option>CICI ELYS NURFITRI</option>
+              <option>CUCU JAUHARI, SE</option>
+              <option>CUCUN, SE.I</option>
+              <option>DADAN FIET HARDAN</option>
+              <option>DADAN HAMDANI, S.Pd</option>
+              <option>DADANG SETIAWAN</option>
+              <option>DEDE LINGGGAH FAHRIATI, SE</option>
+              <option>DEVI NOVITA SWARY</option>
+              <option>DIAN DWI YANUARSIH</option>
+              <option>DIAN TRIANA HIDAYAT, S.HUT</option>
+              <option>DIAN WIDIANINGSIH, S.Pd</option>
+              <option>DIDIN SAYUDIN, SH</option>
+              <option>DINI ARYANTI LESTARI, S.Pd</option>
+              <option>DINNI ADIANTY, S.Sos</option>
+              <option>DIYAH SUKMA LULU HELUWANI, S.PD.I</option>
+              <option>DONNA ROMDONA,ST</option>
+              <option>DRS. ANDASYAH</option>
+              <option>DWI DARA PURWATI</option>
+              <option>DWI PUTRA WIJAYA</option>
+              <option>DWI RAMDHANI, S.SI</option>
+              <option>DYAH ITTA PURNAMASARI, S.E</option>
+              <option>EDI SUGIANTO</option>
+              <option>ELI LAELIYAH, S.Pd</option>
+              <option>EMPOP FAUZIYAH, S.Pd</option>
+              <option>ENDANG SETIAWAN, SE</option>
+              <option>ERI, SH</option>
+              <option>EVI NOPITASARI</option>
+              <option>FAHMI KHAIDIR ATMAZAENI</option>
+              <option>FAISAL</option>
+              <option>FEBBI NURJAMAN</option>
+              <option>FIKRI KARTIKA</option>
+              <option>FITRIA AGUSTINA, SE</option>
+              <option>GUGUN GUNARA, S.KM</option>
+              <option>H. ANDI BUDIMAN, SE</option>
+              <option>HENI SETIANI S.Pd</option>
+              <option>HILMI RIDWAN PANGESTU, S.TR.SOS</option>
+              <option>HIRFAN HILMI, S.Pd</option>
+              <option>ICEU RATNAASIH</option>
+              <option>IIP ARIFIN, S.Pd</option>
+              <option>ILYAS</option>
+              <option>IMA IMROATUN HASANAH, S.Pd</option>
+              <option>IMA RAHMAYANTI, S.Pd</option>
+              <option>IMAM SOPIYUDIN, S.Pd.I</option>
+              <option>IMAN ALIMAN, S.Pd</option>
+              <option>IMAN NARULI PURNAMA, S.Pd</option>
+              <option>IMAS SUMINAR, S.PD</option>
+              <option>INDRA IRAWAN, S.Pd</option>
+              <option>IRA YOGASWARA, S.Kom</option>
+              <option>IRMAYATI, S.Pd</option>
+              <option>JEJEN ZAINAL MUTTAQIN</option>
+              <option>JONI SENJAYA, SE</option>
+              <option>JUJU JULAEHA</option>
+              <option>KARTIKA SARI PUTRI, SST</option>
+              <option>KOKOM KOMALASARI, S.Pd</option>
+              <option>KURIAH</option>
+              <option>LAENA KUSUMA PERDANI</option>
+              <option>LELIH RUHLIANA</option>
+              <option>LIESDIANA FADLUSSHIYAMI RAHMATINA</option>
+              <option>LILIS SRI WAHYUNINGSIH</option>
+              <option>LINA NUR ENDAH</option>
+              <option>LIYA RATNAWATI</option>
+              <option>LUVIA GITA SILVIANI</option>
+              <option>MAMAY MARYATI</option>
+              <option>MESSA EKARIANI WAHYUNINGSIH, A. Md. Keb.</option>
+              <option>MIA KURNIAWATI, S.Pd.I</option>
+              <option>MILCHATUN, S.PD</option>
+              <option>MIRAH ARUM SARI, S.PD</option>
+              <option>MOH. HIBANUDIN, S.Ag</option>
+              <option>MONICHA SILVIANA, S.TR. SOS</option>
+              <option>MUHAMAD HILMI, S.H</option>
+              <option>MUHAMAD SUHYAR, SH</option>
+              <option>NANA RUDIANA</option>
+              <option>NANA SUGIANA, S.IP</option>
+              <option>NANA ZAENAL MUTAQIN,S.AG</option>
+              <option>NENG CHYSKA IVO BUDIAWATI, SPd</option>
+              <option>NOVI NURHAYATI</option>
+              <option>NOVIE MURDIANA SARI, SE</option>
+              <option>NUNU SANUSI, S.Pd</option>
+              <option>NURLAILI</option>
+              <option>NURYANTI</option>
+              <option>ONI RAMDANI, S.Pd</option>
+              <option>PAJRI AULIA</option>
+              <option>RAFIAH, SE</option>
+              <option>REKA BERLIANY NURPUTRI, S.TR.SOS</option>
+              <option>RESHA NURUL SHOLEHA, S.Pd</option>
+              <option>REVI PEBRIYANTO, S.Pd</option>
+              <option>RIAN EGRIAWAN, AMD. KEP</option>
+              <option>RIAN RHOMANSYAH, S.H</option>
+              <option>RINA ROIHATUL JANNAH, S.Pd.I</option>
+              <option>RINI APRIANI, S.KM</option>
+              <option>RINI ARIANTI SAHARA, AMd.Keb</option>
+              <option>RIRIN KARINA NUR`AENI</option>
+              <option>RISA SUCI LESTARI, S.Pd</option>
+              <option>RISMAWATI DEWI</option>
+              <option>RISPANDI, SH</option>
+              <option>RUKIM</option>
+              <option>SANTI RATNASARI, S.Pd</option>
+              <option>SARAH, S.Pd</option>
+              <option>SELVIA PEBRI HERAWATI, AMd.Keb</option>
+              <option>SINTA NOURMAWATI, S.Psi</option>
+              <option>SIPAH HOERIL MALA</option>
+              <option>SISKA VITRIA DEWI</option>
+              <option>SITI NURHASANAH</option>
+              <option>SOBARUDIN</option>
+              <option>SOFIATI ROHMAH</option>
+              <option>TATI SUHARTI</option>
+              <option>TETI INAYAH</option>
+              <option>TETIN KARTINI</option>
+              <option>THIA AMBARWATI</option>
+              <option>TISNA SUTISNA, ST</option>
+              <option>TOTO SUHARTO, S.TP</option>
+              <option>TUTI LESTARI</option>
+              <option>UKY HERNING TYAS, SH</option>
+              <option>USUP SAEFUDIN</option>
+              <option>UUM SUMIATI, SE</option>
+              <option>VERRA DWI NUGRAHANI, S.Pd</option>
+              <option>VERRY AGUNG NUGRAHA, S.Pd</option>
+              <option>VINA TRI HARYANI</option>
+              <option>VIVI PUSPITA AYU</option>
+              <option>WAWAT WAROKAH, S.TR.SOS</option>
+              <option>YATI MARYATI, S.Kom</option>
+              <option>YAYAN SURYANTO</option>
+              <option>YAYAT RUHIYAT, S.Pd</option>
+              <option>YENI AYUNINGSIH, S.Pd</option>
+              <option>YETY MARYATI</option>
+              <option>YOPI, S.Pd</option>
+              <option>YUPITA NURHASANAH</option>
+              </select>
+          </div>
+          <button type="submit" class="btn btn-primary float-end"><i class="fas fa-search me-2"></i>Tampilkan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card my-3" id="progres" style="display:none">
+      <div class="card-header">
+        Progres Pekerjaan
+      </div>
+
+      <div class="card-body">
+
+      </div>
+      <button type=button id=Simpan class="btn btn-primary float-end"><i class="fas fa-save me-2"></i>Simpan</button>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.all.min.js"></script>
+
+  <script>
+    var btnHtml;
+    function getPdp() {
+      let pdp = $('#formPdp #pdp').val();
+      btnHtml = $('#formPdp button').html();
+      $('#progres').hide();
+      $('#formPdp button')
+        .html('<i class="fas fa-spinner fa-pulse me-2"></i>Loading...')
+        .attr('disabled', true);
+
+      google.script.run
+        .withSuccessHandler(getJadwalSuccess)
+        .getProgres(pdp);
+    }
+
+    function getJadwalSuccess(dt) {
+      let nomor=6;
+      if (dt) {
+        let jadwal = `<ol class="list-group list-group-none list-group-flush">`;
+        $(dt[0]).each(function (i, v) {
+
+          jadwal += `
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">`;
+                if(i<3){
+                  jadwal += `<div class="jadwal" id=bln`+(i)+`>`+ dt[1][i] + `</div>`;
+                }else{
+
+                  jadwal += `Tanggal : ` + (nomor++) + ` &nbsp; <input type='text' id='bln`+(i)+`' value='`+ dt[1][i] + `'></div>`;
+
+                }
+            jadwal += `
+              </div>
+            </li>
+            
+          `;
+        });
+        jadwal += '</ol>';
+        $('#progres .card-body').html(jadwal);
+        $('#progres').slideDown();
+        $('#formPdp button')
+          .html(btnHtml)
+          .removeAttr('disabled');
+      }
+      else showError();
+    }
+    function showError() {
+      $('#formPdp button')
+        .html(btnHtml)
+        .removeAttr('disabled');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Data tidak ditemukan!',
+        confirmButtonText: '<i class="fas fa-check me-2"></i>OK!'
+      })
+    }
+
+    $(document).ready(function(){
+      $('#Simpan').click(function(){
+        let pdp = $('#formPdp #pdp').val();
+
+        let data = {
+          bln0 : $('#bln0').html(),
+          bln1 : $('#bln1').html(),
+          bln2 : $('#bln2').val(),
+          bln3 : $('#bln3').val(),
+          bln4 : $('#bln4').val(),
+          bln5 : $('#bln5').val(),
+          bln6 : $('#bln6').val(),
+          bln7 : $('#bln7').val(),
+          bln8 : $('#bln8').val(),
+          bln9 : $('#bln9').val(),
+          bln10 : $('#bln10').val(),
+          bln11 : $('#bln11').val(),
+          bln12 : $('#bln12').val(),
+          bln13 : $('#bln13').val(),
+          bln14 : $('#bln14').val(),
+          bln15 : $('#bln15').val(),
+          bln16 : $('#bln16').val(),
+          bln17 : $('#bln17').val(),
+          bln18 : $('#bln18').val(),
+          bln19 : $('#bln19').val(),
+          bln20 : $('#bln20').val(),
+          bln21 : $('#bln21').val(),
+          bln22 : $('#bln22').val(),
+          bln23 : $('#bln23').val(),
+          bln24 : $('#bln24').val(),
+          bln25 : $('#bln25').val(),
+          bln26 : $('#bln26').val(),
+          bln27 : $('#bln27').val(),
+          bln28 : $('#bln28').val(),
+          bln29 : $('#bln29').val()
+        };
+        google.script.run.withSuccessHandler(callbackAbsensi).submitAbsensi(pdp,data);
+      });
+    });
+
+    function callbackAbsensi(msg){
+        if(msg){
+          alert(msg);          
+        }
+    }
+
+  </script>
+</body>
+
+</html>
